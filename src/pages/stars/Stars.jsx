@@ -2,14 +2,19 @@ import '../pages.css'
 import Paper from '@mui/material/Paper';
 import { Box } from '@mui/material';
 import { Typography } from '@mui/material';
+import Radio from '@mui/material/Radio';
+import RadioGroup from '@mui/material/RadioGroup';
+import FormControlLabel from '@mui/material/FormControlLabel';
+import FormControl from '@mui/material/FormControl';
+import FormLabel from '@mui/material/FormLabel';
 
 function Stars() {
 
     return (
     <>
         <div className='star-component'>
-            <Typography variant="h2" m={10}>
-                Welcome to the Stars!
+            <Typography variant="h1" m={10} color={'#ffffff'}>
+                Stars Sparkling Bright!
             </Typography>
 
             <Box
@@ -20,13 +25,31 @@ function Stars() {
                 ml: 10,
                 mr: 10,
                 textAlign: 'center',
+                fontSize:20,
+                lineHeight:2,
                 p: 3
                 },
             }}
             >
-                <Paper> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </Paper>
+                <Paper> Beneath the velvet canopy of the night, stars become celestial jewels, adorning the heavens with their brilliance. They are like ethereal lanterns, casting their gentle glow upon the world, each one a beacon of hope, a spark of wonder. These celestial gems, sprinkled across the vast expanse of space, twinkle in a cosmic dance, as if sharing secrets with the universe. Their radiant light transcends time, bridging the gap between ancient history and the present moment. When we look up at the sky and see those stars sparkling bright, we are witnessing the echoes of the past, the promises of the future, and the enduring magic of the cosmos. It's a reminder that even in the darkest of nights, there is always a glimmer of beauty and a source of inspiration that can guide us on our journey through the mysteries of existence. </Paper>
             </Box>
-        </div>
+            <Typography variant="h5" mt={5} color={'#ffffff'}>
+                Preference:
+            </Typography>
+            <RadioGroup 
+            sx={{
+                display: 'flex',
+                flexWrap: 'wrap',
+                '& > :not(style)': {
+                justifyContent:'center',
+                fontSize:20,
+                },
+            }}
+            >
+                <FormControlLabel value="high" sx={{color:'#ffffff'}}  control={<Radio sx={{color:'#ffffff'}} />} label="High" />
+                <FormControlLabel value="low" sx={{color:'#ffffff'}}  control={<Radio sx={{color:'#ffffff'}} />} label="Low" />
+            </RadioGroup>
+            </div>
     </>
     )
   }
