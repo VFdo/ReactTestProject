@@ -11,6 +11,7 @@ import DarkModeIcon from '@mui/icons-material/DarkMode';
 export default function Navbar() {
   return (
 
+
     <AppBar position="fixed">
     <Box sx={{ width: '100%', backgroundColor:'#02101a', p:1}}>
       <Stack sx={{p:1}} direction="row"

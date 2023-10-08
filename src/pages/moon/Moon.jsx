@@ -1,7 +1,5 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import '../pages.css'
-import Paper from '@mui/material/Paper';
-import { Box } from '@mui/material';
 import Card from '@mui/material/Card';
 import CardActions from '@mui/material/CardActions';
 import CardContent from '@mui/material/CardContent';
@@ -27,9 +25,6 @@ function Moon() {
                     title="moon"
                 />
                 <CardContent>
-                    {/* <Typography gutterBottom variant="h5" component="div">
-                    Lizard
-                    </Typography> */}
                     <Typography variant="h6" color="text.secondary">
                     The moon, a distant, celestial companion, inspires the hope of shared adventures in the cosmos. It's as though it whispers secrets of far-off galaxies and uncharted realms, igniting a desire to explore the mysteries of the universe together. In its soft, romantic light, we find a cosmic canvas upon which our story is painted, an eternal masterpiece of togetherness and exploration.
                     </Typography>
