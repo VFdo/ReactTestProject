@@ -1,4 +1,5 @@
 import Logo from '../../assets/logo.png';
+import { AppBar } from '@mui/material';
 import Button from '@mui/material/Button';
 import Stack from '@mui/material/Stack';
 import Divider from '@mui/material/Divider';
@@ -10,8 +11,9 @@ import DarkModeIcon from '@mui/icons-material/DarkMode';
 export default function Navbar() {
   return (
 
+    <AppBar position="fixed">
     <Box sx={{ width: '100%', backgroundColor:'#02101a', p:1}}>
-      <Stack direction="row"
+      <Stack sx={{p:1}} direction="row"
         justifyContent="space-around"
         alignItems="center"
         spacing={2}>
@@ -51,6 +53,8 @@ export default function Navbar() {
             }}
           color='primary' size ="large"href="#text-buttons" startIcon={<DarkModeIcon />}>Moon</Button>
       </Stack>
+      <Divider sx={{ bgcolor: "#5A5A5A" }} />
     </Box>
+    </AppBar>
   );
 }
