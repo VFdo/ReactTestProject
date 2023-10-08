@@ -1,0 +1,26 @@
+.sky-component, .moon-component, .star-component{
+    width: 90%;
+    height: 100vh;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 25px;
+    background-color: bisque;
+}
+
+.sky-component{  
+    background-image: url(./sky/sky.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.moon-component{
+    background-image: url(./sky.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.star-component{
+    background-image: url(./sky.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}

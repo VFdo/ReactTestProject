@@ -1,16 +1,15 @@
-// import '../../index.css'
 import '../pages.css'
 import Paper from '@mui/material/Paper';
 import { Box } from '@mui/material';
 import { Typography } from '@mui/material';
 
-function Sky() {
+function Moon() {
 
     return (
     <>
-        <div className='sky-component'>
+        <div className='moon-component'>
             <Typography variant="h2" m={10}>
-                Welcome to!
+                Welcome to the Moon!
             </Typography>
 
             <Box
@@ -32,4 +31,4 @@ function Sky() {
     )
   }
   
-  export default Sky
+  export default Moon
