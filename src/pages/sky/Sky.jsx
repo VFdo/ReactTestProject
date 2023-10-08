@@ -9,8 +9,8 @@ function Sky() {
     return (
     <>
         <div className='sky-component'>
-            <Typography variant="h2" m={10}>
-                Welcome to!
+            <Typography variant="h1" m={10} color={'#ffffff'}>
+                Sky is High!
             </Typography>
 
             <Box
@@ -21,11 +21,15 @@ function Sky() {
                 ml: 10,
                 mr: 10,
                 textAlign: 'center',
+                fontSize:20,
+                lineHeight:2,
                 p: 3
                 },
             }}
             >
-                <Paper> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </Paper>
+                <Paper> 
+                The sky, a canvas of boundless dreams, stretches overhead in a grand tapestry of celestial wonders. It is a vaulted realm where the imagination takes flight on wings of inspiration. With its lofty embrace, the sky invites us to reach beyond earthly confines and ascend into the ethereal expanse of possibility. It is a realm where the sun kisses the heavens with hues of gold at dawn and bids farewell in a fiery embrace at dusk. The sky, where clouds gather in whispered conversations, their billowing forms like ancient sages sharing tales of bygone eras. As day turns to night, the sky unveils its sparkling jewels, stars that twinkle like the dreams of distant galaxies. In its lofty height, the sky is a reminder that the limitless horizon is but a breath away, where aspirations rise like phoenixes, and the human spirit soars in pursuit of the infinite.
+                </Paper>
             </Box>
         </div>
     </>
