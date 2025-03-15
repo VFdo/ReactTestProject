@@ -8,7 +8,7 @@ function Sky() {
 
     return (
     <>
-        <div className='sky-component'>
+        <div id="sky-section" className='sky-component'>
             <Typography variant="h1" m={10} color={'#ffffff'}>
                 Sky is High!
             </Typography>
@@ -28,7 +28,7 @@ function Sky() {
             >
                 <Paper> 
                     <Typography variant="h6" color="text.secondary" sx={{lineHeight:2}}>
-                        The sky, a canvas of boundless dreams, stretches overhead in a grand tapestry of celestial wonders. It is a vaulted realm where the imagination takes flight on wings of inspiration. With its lofty embrace, the sky invites us to reach beyond earthly confines and ascend into the ethereal expanse of possibility. It is a realm where the sun kisses the heavens with hues of gold at dawn and bids farewell in a fiery embrace at dusk. The sky, where clouds gather in whispered conversations, their billowing forms like ancient sages sharing tales of bygone eras. As day turns to night, the sky unveils its sparkling jewels, stars that twinkle like the dreams of distant galaxies. In its lofty height, the sky is a reminder that the limitless horizon is but a breath away, where aspirations rise like phoenixes, and the human spirit soars in pursuit of the infinite.
+                    The sky is the portion of Earth's atmosphere and outer space visible from the surface, appearing as a vast dome due to atmospheric scattering of sunlight. During the day, the sky appears blue because shorter-wavelength blue light is scattered more efficiently by air molecules than longer-wavelength red light, a phenomenon known as Rayleigh scattering. At sunrise and sunset, the angle of the Sun's rays increases, causing more scattering of blue and green light, allowing red and orange hues to dominate. At night, in the absence of direct sunlight, the sky appears black, revealing celestial objects such as stars, planets, and the Moon. Atmospheric conditions, such as humidity, pollution, and cloud cover, further influence the sky's color and visibility, making it a dynamic and ever-changing aspect of Earth's environment.
                     </Typography>
                 </Paper>
             </Box>

@@ -17,7 +17,7 @@ function Moon() {
 
     return (
     <>
-        <div className='moon-component' style={{ display:'flex', justifyContent:'center', pb:50}}>
+        <div id="moon-section" className='moon-component' style={{ display:'flex', justifyContent:'center', pb:50}}>
             <Card sx={{ maxWidth: 450 }}>
                 <CardMedia
                     sx={{ height: 450 }}
@@ -26,7 +26,7 @@ function Moon() {
                 />
                 <CardContent>
                     <Typography variant="h6" color="text.secondary">
-                    The moon, a distant, celestial companion, inspires the hope of shared adventures in the cosmos. It's as though it whispers secrets of far-off galaxies and uncharted realms, igniting a desire to explore the mysteries of the universe together. In its soft, romantic light, we find a cosmic canvas upon which our story is painted, an eternal masterpiece of togetherness and exploration.
+                    The Moon is Earth's only natural satellite and the fifth-largest in the Solar System. It formed approximately 4.5 billion years ago, likely from debris resulting from a collision between Earth and a Mars-sized body called Theia. 
                     </Typography>
                 </CardContent>
                 <CardActions >

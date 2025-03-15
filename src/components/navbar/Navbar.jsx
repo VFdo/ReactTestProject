@@ -9,10 +9,16 @@ import StarIcon from '@mui/icons-material/Star';
 import DarkModeIcon from '@mui/icons-material/DarkMode';
 
 export default function Navbar() {
+  const scrollToSection = (sectionId) => {
+    const element = document.getElementById(sectionId);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
   return (
 
 
-    <AppBar position="fixed">
+    <AppBar position="relative">
     <Box sx={{ width: '100%', backgroundColor:'#02101a', p:1}}>
       <Stack sx={{p:1}} direction="row"
         justifyContent="space-around"
@@ -34,7 +40,9 @@ export default function Navbar() {
               fontSize: "18px",
               color:'#ffffff'
             }}
-          color='error' size ="large" href="#text-buttons" startIcon={<CloudIcon />}>Sky</Button> 
+          color='error' size ="large" href="#text-buttons" startIcon={<CloudIcon />} 
+          onClick={() => scrollToSection('sky-section')}>
+            Sky</Button> 
           <Divider orientation="vertical" variant="middle" flexItem sx={{ bgcolor: "#5A5A5A" }}/>
           <Button 
             style={{
@@ -43,7 +51,9 @@ export default function Navbar() {
               fontSize: "18px",
               color:'#ffffff'
             }}
-          color='primary' size ="large" href="#text-buttons" startIcon={<StarIcon />}>Stars</Button>
+          color='primary' size ="large" href="#text-buttons" startIcon={<StarIcon />}onClick={() => scrollToSection('stars-section')}>
+            Stars
+            </Button>
           <Divider orientation="vertical" variant="middle" flexItem sx={{ bgcolor: "#5A5A5A" }}/>
           <Button 
             style={{
@@ -52,7 +62,9 @@ export default function Navbar() {
               fontSize: "18px",
               color:'#ffffff'
             }}
-          color='primary' size ="large"href="#text-buttons" startIcon={<DarkModeIcon />}>Moon</Button>
+          color='primary' size ="large"href="#text-buttons" startIcon={<DarkModeIcon />}onClick={() => scrollToSection('moon-section')}>
+            Moon
+            </Button>
       </Stack>
       <Divider sx={{ bgcolor: "#5A5A5A" }} />
     </Box>

@@ -9,7 +9,7 @@ import FormControlLabel from '@mui/material/FormControlLabel';
 function Stars() {
     return (
     <>
-        <div className='star-component'>
+        <div id="stars-section" className='star-component'>
             <Typography variant="h1" m={10} color={'#ffffff'}>
                 Stars Sparkling Bright!
             </Typography>
@@ -29,7 +29,7 @@ function Stars() {
             >
                 <Paper> 
                     <Typography variant="h6" color="text.secondary" sx={{lineHeight:2}}>
-                        Beneath the velvet canopy of the night, stars become celestial jewels, adorning the heavens with their brilliance. They are like ethereal lanterns, casting their gentle glow upon the world, each one a beacon of hope, a spark of wonder. These celestial gems, sprinkled across the vast expanse of space, twinkle in a cosmic dance, as if sharing secrets with the universe. Their radiant light transcends time, bridging the gap between ancient history and the present moment. When we look up at the sky and see those stars sparkling bright, we are witnessing the echoes of the past, the promises of the future, and the enduring magic of the cosmos. It's a reminder that even in the darkest of nights, there is always a glimmer of beauty and a source of inspiration that can guide us on our journey through the mysteries of existence.
+                    Stars are massive, luminous spheres of plasma held together by gravity, primarily composed of hydrogen and helium. They generate energy through nuclear fusion, where hydrogen atoms fuse into helium under extreme temperature and pressure, releasing vast amounts of light and heat. This process creates the radiation that makes stars shine. A star's life cycle depends on its mass, evolving through stages such as main sequence, red giant, and either a white dwarf, neutron star, or black hole. Stars are fundamental to the universe, producing heavier elements through fusion and supernova explosions, which contribute to the formation of planets and life. Their brightness, color, and temperature are classified using the Hertzsprung-Russell diagram, which helps astronomers understand stellar evolution.
                     </Typography>
                 </Paper>
             </Box>
